@@ -7,4 +7,5 @@ test('length should be equal to string', () => {
 
 test('string should be reversed',() => {
     expect(reverseString('nana')).toBe('anan')
+     expect(reverseString('hello')).toBe('olleh')
 })
