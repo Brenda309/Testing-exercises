@@ -1,6 +1,7 @@
 const stringLength = require('./string.js');
 const reverseString = require('./reverse.js');
 const Calculator = require('./calculator.js');
+const capitalize = require('./capitalization.js');
 
 test('length should be equal to string', () => {
     expect(stringLength('hello')).toBe(5);
@@ -37,3 +38,7 @@ describe('Calculator', () => {
      expect(Calculator.multiply(1000,1000)).toBe(1000000); expect(Calculator.add(1,2)).toBe(3);
 
     })
+
+test('first letter should be in caps', () => {
+expect(capitalize('hello')).toBe('Hello');
+})
